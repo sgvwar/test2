@@ -1,9 +1,11 @@
 <?php
 
 include("Suma.php");
-include 'Resta.php';
-require 'Multiply.php';
-include_once 'Divide.php';
+include("Resta.php");
+include("Multiply.php");
+include("Divide.php");
+//require ("Multiply.php");
+//include_once ("Divide.php");
 
 class Calculator
 {
