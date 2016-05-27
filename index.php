@@ -48,13 +48,10 @@ $calc=new Calculator();
 echo "Calculator Operations\n";
 echo "-------------------------\n";
 foreach ($row as $r) {
-     echo "Operation:[". $r['operation']."] value:".$r['param1']." value:".$r['param2']," = ";
-     $resultado=$calc->$r['operation']($r['param1'],$r['param2']);
-     $total+=$resultado;
-     
-     echo $total."\n";
-    
-}
+echo "Operation:[". $r['operation']."] value:".$r['param1']." value:".$r['param2']," = ";
+$resultado=$calc->$r['operation']($r['param1'],$r['param2']);
+$total+=$resultado;
+echo $total."\n";}
 
 echo "Total=".$total."\n"; 
     
